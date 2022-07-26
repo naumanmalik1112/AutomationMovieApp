@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite  thread-count="1" name="Parallel Testing">
+
+	<test name="Test1">
+		<parameter name="platform" value="11" />
+		<parameter name="udid" value="RF8NA2RLV3J" />
+		<parameter name="device" value="Samsung S20FE" />
+		<parameter name="systemPort" value="8201" />
+		<classes>
+				
+			<class name="theMovie.app.testcases.Themovie"> </class> 
+				
+		
+		</classes>
+	</test>
+	
+	
+</suite> <!-- Suite -->
