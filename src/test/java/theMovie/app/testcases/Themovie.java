@@ -30,7 +30,7 @@ public class Themovie extends AppSetup{
 	}
 		
 	@Test(priority=2)
-	public void ClickedonMovie() throws InterruptedException 
+	public void ClickedonMovie1() throws InterruptedException 
 	{
 		POM =new TheMoviePOM(driver);
 		POM.Movie1.click();
@@ -39,29 +39,68 @@ public class Themovie extends AppSetup{
 	}
 	
 	@Test(priority=3)
-	public void VerifyMovie() throws InterruptedException
+	public void VerifyMovie1() throws InterruptedException
 	
 	{	
 		String MovieName= POM.Title1.getText();
 		String ExpectedName= "Top Gun: Maverick";
-		System.out.print("Movie name is " + MovieName);
+		System.out.print("Movie name is " + MovieName + "\n");
 		
 		assertEquals(MovieName, ExpectedName);
 	}
 	
 	
 	@Test(priority=4)
-	public void VerifyReleaseDate()
+	public void VerifyReleaseDate1() throws InterruptedException
 	{
 	
 		String MovieDate=POM.Date1.getText();
 		String ExpectedDate= "Release Date : 2022-05-24";
+		System.out.print("Movie release date is " + MovieDate + "\n");
+		
+		assertEquals(MovieDate, ExpectedDate);
+		
+		driver.navigate().back();
+		Thread.sleep(3000);	
+}
+	
+	
+	@Test(priority=5)
+	public void ClickedonMovie2() throws InterruptedException 
+	{
+		POM =new TheMoviePOM(driver);
+		POM.Movie2.click();
+		Thread.sleep(3000);
+	
+	}
+		
+	
+	@Test(priority=5)
+	public void VerifyMovie2() throws InterruptedException
+	
+	{	
+		String MovieName= POM.Title1.getText();
+		String ExpectedName= "Minions: The Rise of Gru";
+		System.out.print("Movie name is " + MovieName + "\n");
+		
+		assertEquals(MovieName, ExpectedName);
+	}
+
+	
+	
+	@Test(priority=6)
+	public void VerifyReleaseDate2() throws InterruptedException
+	{
+	
+		String MovieDate=POM.Date1.getText();
+		String ExpectedDate= "Release Date : 2022-06-29";
 		System.out.print("Movie release date is " + MovieDate);
 		
 		assertEquals(MovieDate, ExpectedDate);
-	
+		
+		driver.navigate().back();
+		Thread.sleep(3000);	
 }
-	
 }
 	
 	

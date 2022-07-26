@@ -30,5 +30,15 @@ public class TheMoviePOM {
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Top Gun: Maverick']")
   	public AndroidElement Movie1;
 	
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Minions: The Rise of Gru']")
+  	public AndroidElement Movie2;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Doctor Strange in the Multiverse of Madness']")
+  	public AndroidElement Movie3;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Jurassic World Dominion']")
+  	public AndroidElement Movie4;
+	
 
 }
