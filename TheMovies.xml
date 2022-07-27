@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite  thread-count="1" name="Parallel Testing">
+<suite  thread-count="1" name="TheMovie App Testing">
 
 	<test name="Test1">
 		<parameter name="platform" value="11" />
