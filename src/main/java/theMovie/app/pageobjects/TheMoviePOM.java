@@ -18,27 +18,29 @@ public class TheMoviePOM {
 	
 	
 	// TheMovies first movie
-	@AndroidFindBy(id="com.skydoves.themovies:id/item_poster_post")
+	@AndroidFindBy(id="com.skydoves.themovies:id/item_poster_post") // POM ID for Movie TopGun
 	public AndroidElement topgun1;
 	
-	@AndroidFindBy(id="com.skydoves.themovies:id/detail_header_title")
+	@AndroidFindBy(id="com.skydoves.themovies:id/detail_header_title") // POM ID for App Title
 	public AndroidElement Title1;
 	
-	@AndroidFindBy(id="com.skydoves.themovies:id/detail_header_release")
+	@AndroidFindBy(id="com.skydoves.themovies:id/detail_header_release") // POM ID for release date
 	public AndroidElement Date1;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Top Gun: Maverick']")
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Top Gun: Maverick']") // POM Xpath for Movie1
   	public AndroidElement Movie1;
 	
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Minions: The Rise of Gru']")
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Minions: The Rise of Gru']") // POM Xpath for Movie2 
   	public AndroidElement Movie2;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Doctor Strange in the Multiverse of Madness']")
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Doctor Strange in the Multiverse of Madness']") // POM Xpath for Movie3
   	public AndroidElement Movie3;
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Jurassic World Dominion']")
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Jurassic World Dominion']") // POM XPath for Movie4
   	public AndroidElement Movie4;
 	
-
+	@AndroidFindBy(id="com.skydoves.themovies:id/detail_header_star") // POM ID for Ratings 
+	public AndroidElement Rating;
+	
 }
